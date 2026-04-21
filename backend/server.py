@@ -380,6 +380,43 @@ def _generate_follow_ups(query: str, response: str) -> list[str]:
     return prompts
 
 
+def _generate_mock_activity(query: str, sources: list[dict]) -> list[dict]:
+    """Generate mock thought-process activity steps for demo mode."""
+    source_names = ", ".join(s.get("source", "unknown") for s in sources[:3]) or "SOP database"
+    return [
+        {
+            "step": "Query Planning",
+            "description": f'Analyzing query: "{query}"',
+            "duration_ms": 120,
+        },
+        {
+            "step": "Document Search",
+            "description": f"Searching indexed SOPs — found {len(sources)} relevant documents: {source_names}",
+            "duration_ms": 340,
+        },
+        {
+            "step": "AI Reasoning",
+            "description": "Grounding answer against retrieved SOP content and validating citations",
+            "duration_ms": 890,
+            "reasoning_tree": [
+                {
+                    "label": "Extract relevant sections from matched SOPs",
+                    "children": [
+                        {"label": f"Reviewing {s.get('source', 'doc')}: {s.get('title', '')}"} for s in sources[:3]
+                    ],
+                },
+                {"label": "Cross-reference procedures for consistency"},
+                {"label": "Validate all claims have citation support"},
+            ],
+        },
+        {
+            "step": "Answer Synthesis",
+            "description": "Composing response with inline citations and safety warnings",
+            "duration_ms": 210,
+        },
+    ]
+
+
 # --- MCP Tools ---
 
 
@@ -617,6 +654,8 @@ async def chat(query: str, conversation_id: str = "") -> dict:
         )
 
         mock_response = _get_mock_chat_response(query, citation_refs)
+        follow_ups = _generate_follow_ups(query, mock_response)
+        mock_activity = _generate_mock_activity(query, sources)
 
         return {
             "response": mock_response,
@@ -624,6 +663,8 @@ async def chat(query: str, conversation_id: str = "") -> dict:
             "conversation_id": conversation_id or "conv-mock-001",
             "grounded": True,
             "confidence": 0.95,
+            "activity": mock_activity,
+            "follow_up_prompts": follow_ups,
         }
 
     # Production: Invoke the SOP Orchestrator Agent
@@ -656,6 +697,8 @@ async def chat(query: str, conversation_id: str = "") -> dict:
 
     citation_refs = " ".join([f"[{c['index']}]" for c in citations])
     mock_response = _get_mock_chat_response(query, citation_refs)
+    follow_ups = _generate_follow_ups(query, mock_response)
+    mock_activity = _generate_mock_activity(query, sources)
 
     return {
         "response": mock_response,
@@ -663,6 +706,8 @@ async def chat(query: str, conversation_id: str = "") -> dict:
         "conversation_id": conversation_id or "conv-fallback-001",
         "grounded": True,
         "confidence": 0.90,
+        "activity": mock_activity,
+        "follow_up_prompts": follow_ups,
     }
 
 
