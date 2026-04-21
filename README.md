@@ -1,6 +1,6 @@
 # SOP RAG Agentic Application
 
-> AI-powered SOP chatbot for Reyes Coca-Cola Bottling using multi-agent orchestration
+> AI-powered SOP chatbot for Contoso using multi-agent orchestration
 
 ## Architecture
 

@@ -16,7 +16,7 @@ This Standard Operating Procedure establishes the required steps for responding 
 
 ## 2. Scope
 
-Applies to all Reyes Coca-Cola Bottling (Contoso) warehouse locations, including:
+Applies to all Contoso warehouse locations, including:
 - Receiving docks
 - Storage areas
 - Pick/pack zones

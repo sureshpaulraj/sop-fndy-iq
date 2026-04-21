@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 mcp = FastMCP(
     "sop-rag-server",
     instructions=(
-        "You are the SOP RAG assistant for Reyes Coca-Cola Bottling. "
+        "You are the SOP RAG assistant for Contoso. "
         "Help employees find answers from Standard Operating Procedures. "
         "Always cite your sources with document references."
     ),
@@ -48,7 +48,7 @@ def _get_kb_client():
 mcp = FastMCP(
     "sop-rag-server",
     instructions=(
-        "You are the SOP RAG assistant for Reyes Coca-Cola Bottling. "
+        "You are the SOP RAG assistant for Contoso. "
         "Help employees find answers from Standard Operating Procedures. "
         "Always cite your sources with document references."
     ),

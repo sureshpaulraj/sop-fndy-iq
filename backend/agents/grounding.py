@@ -35,7 +35,7 @@ async def validate_grounding(
         ]
     )
 
-    system_prompt = """You are a grounding validator for SOP documents at Reyes Coca-Cola Bottling.
+    system_prompt = """You are a grounding validator for SOP documents at Contoso.
 
 Your task:
 1. Answer the user's question using ONLY the provided source chunks

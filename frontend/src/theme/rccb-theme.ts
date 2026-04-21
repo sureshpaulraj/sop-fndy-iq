@@ -1,8 +1,8 @@
-/** Contoso Design Tokens — Reyes Coca-Cola Bottling Brand Theme */
+/** Contoso Design Tokens — Contoso Brand Theme */
 
 export const ContosoTheme = {
   colors: {
-    primary: '#F40009',       // Coca-Cola Red
+    primary: '#F40009',       // Contoso Red
     primaryHover: '#D10007',
     dark: '#1A1A1A',
     darkSecondary: '#2D2D2D',
