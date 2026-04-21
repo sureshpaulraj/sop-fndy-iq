@@ -6,13 +6,13 @@
 **Department:** Environmental Health & Safety  
 **Owner:** EHS Director  
 **Review Cycle:** Annual  
-**Classification:** Internal — All RCCB Employees  
+**Classification:** Internal — All Contoso Employees  
 
 ---
 
 ## 1. Purpose
 
-This SOP establishes the emergency evacuation procedures for all RCCB warehouse and office facilities. Every employee must be familiar with this plan and participate in quarterly evacuation drills.
+This SOP establishes the emergency evacuation procedures for all Contoso warehouse and office facilities. Every employee must be familiar with this plan and participate in quarterly evacuation drills.
 
 ## 2. Scope
 
@@ -121,10 +121,10 @@ The **Incident Commander** (IC) is the senior manager on-site:
 
 | Role | Contact |
 |------|---------|
-| EHS Hotline | 1-800-RCCB-EHS |
+| EHS Hotline | 1-800-Contoso-EHS |
 | Fire/EMS | 911 |
 | Facility Security | ext. 5555 |
-| Corporate Risk Management | 1-800-RCCB-RISK |
+| Corporate Risk Management | 1-800-Contoso-RISK |
 | Poison Control | 1-800-222-1222 |
 
 ## 10. References
@@ -134,9 +134,9 @@ The **Incident Commander** (IC) is the senior manager on-site:
 - SOP-EHS-008: Hazardous Material Handling & Spill Control
 - OSHA 29 CFR 1910.38: Emergency Action Plans
 - NFPA 101: Life Safety Code
-- RCCB Emergency Management Policy v6.0
+- Contoso Emergency Management Policy v6.0
 
 ---
 
-*Document approved by: VP of Risk Management & Safety, RCCB*  
+*Document approved by: VP of Risk Management & Safety, Contoso*  
 *Next review date: January 1, 2027*

@@ -16,8 +16,8 @@ export function ConversationHistory({
       style={{
         width: 'var(--sidebar-width)',
         marginTop: 'var(--header-height)',
-        borderRight: '1px solid var(--rccb-gray-200)',
-        background: 'var(--rccb-white)',
+        borderRight: '1px solid var(--contoso-gray-200)',
+        background: 'var(--contoso-white)',
         overflow: 'auto',
         padding: '16px',
         position: 'fixed',
@@ -32,8 +32,8 @@ export function ConversationHistory({
           width: '100%',
           padding: '10px',
           borderRadius: '8px',
-          border: '1px solid var(--rccb-gray-300)',
-          background: 'var(--rccb-white)',
+          border: '1px solid var(--contoso-gray-300)',
+          background: 'var(--contoso-white)',
           fontWeight: 500,
           fontSize: '13px',
           marginBottom: '16px',
@@ -47,7 +47,7 @@ export function ConversationHistory({
       </button>
 
       {conversations.length === 0 ? (
-        <div style={{ color: 'var(--rccb-gray-500)', fontSize: '13px', textAlign: 'center' }}>
+        <div style={{ color: 'var(--contoso-gray-500)', fontSize: '13px', textAlign: 'center' }}>
           No conversations yet
         </div>
       ) : (
@@ -61,7 +61,7 @@ export function ConversationHistory({
                 borderRadius: '6px',
                 textAlign: 'left',
                 fontSize: '13px',
-                color: 'var(--rccb-dark)',
+                color: 'var(--contoso-dark)',
                 width: '100%',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',

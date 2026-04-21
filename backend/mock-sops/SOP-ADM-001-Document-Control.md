@@ -12,7 +12,7 @@
 
 ## 1. Purpose
 
-This SOP governs the creation, review, approval, distribution, and retirement of all Standard Operating Procedures across RCCB facilities. It ensures document consistency, version control, and regulatory compliance.
+This SOP governs the creation, review, approval, distribution, and retirement of all Standard Operating Procedures across Contoso facilities. It ensures document consistency, version control, and regulatory compliance.
 
 ## 2. SOP Library Overview
 
@@ -20,11 +20,11 @@ This SOP governs the creation, review, approval, distribution, and retirement of
 
 | Dept Code | Department | Active SOPs | SharePoint Location |
 |-----------|-----------|-------------|-------------------|
-| WH | Warehouse Operations | 12 | /sites/rccb-sop/warehouse |
-| EHS | Environmental Health & Safety | 9 | /sites/rccb-sop/ehs |
-| QA | Quality Assurance | 8 | /sites/rccb-sop/quality |
-| DIST | Distribution & Logistics | 11 | /sites/rccb-sop/distribution |
-| HR | Human Resources | 7 | /sites/rccb-sop/hr |
+| WH | Warehouse Operations | 12 | /sites/Contoso-sop/warehouse |
+| EHS | Environmental Health & Safety | 9 | /sites/Contoso-sop/ehs |
+| QA | Quality Assurance | 8 | /sites/Contoso-sop/quality |
+| DIST | Distribution & Logistics | 11 | /sites/Contoso-sop/distribution |
+| HR | Human Resources | 7 | /sites/Contoso-sop/hr |
 | **TOTAL** | | **47** | |
 
 ### 2.2 Document Naming Convention
@@ -47,7 +47,7 @@ Examples:
 1. Department manager identifies need for new SOP
 2. Submit SOP Request Form (ADM-SOP-REQ-100) to Document Control
 3. Assign author and subject matter expert (SME)
-4. Author drafts SOP using RCCB SOP Template (ADM-TPL-001)
+4. Author drafts SOP using Contoso SOP Template (ADM-TPL-001)
 5. SME reviews for technical accuracy
 
 ### 3.2 Review & Approval
@@ -113,19 +113,19 @@ Examples:
 ## 5. Access and Security
 
 - All SOPs stored in SharePoint with department-level permissions
-- Read access: All RCCB employees (active SOPs)
+- Read access: All Contoso employees (active SOPs)
 - Edit access: Document Control team and SOP owners only
 - Archive access: Compliance and Audit teams
 - External access: Prohibited without VP approval
 
 ## 6. References
 
-- RCCB Document Control Policy v3.0
+- Contoso Document Control Policy v3.0
 - ISO 9001:2015 — Quality Management Systems (Clause 7.5)
 - FDA 21 CFR Part 11 — Electronic Records
-- RCCB Information Governance Policy v2.0
+- Contoso Information Governance Policy v2.0
 
 ---
 
-*Document approved by: Chief Operating Officer, RCCB*  
+*Document approved by: Chief Operating Officer, Contoso*  
 *Next review date: December 1, 2026*

@@ -5,7 +5,7 @@
 ## Architecture
 
 ```
-React Frontend (RCCB themed) → FastMCP Server → SOP Orchestrator Agent
+React Frontend (Contoso themed) → FastMCP Server → SOP Orchestrator Agent
                                                   ├── Retrieval Agent (AI Search)
                                                   ├── Grounding Validator Agent
                                                   └── Citation Formatter Agent

@@ -20,9 +20,9 @@ PARAMS = {"api-version": API_VERSION}
 def create_indexed_ks():
     aoai_uri = aoai.replace(".services.ai.azure.com", ".openai.azure.com")
     body = {
-        "name": "rccb-sop-indexed-ks",
+        "name": "Contoso-sop-indexed-ks",
         "kind": "indexedSharePoint",
-        "description": "RCCB SOP documents indexed from SharePoint",
+        "description": "Contoso SOP documents indexed from SharePoint",
         "indexedSharePointParameters": {
             "connectionString": f"SharePointOnlineEndpoint={sp_url}",
             "containerName": "defaultSiteLibrary",
@@ -48,7 +48,7 @@ def create_indexed_ks():
             },
         },
     }
-    url = f"{endpoint}/knowledgesources/rccb-sop-indexed-ks"
+    url = f"{endpoint}/knowledgesources/Contoso-sop-indexed-ks"
     r = requests.put(url, params=PARAMS, headers=HEADERS, json=body)
     print(f"[Indexed KS] Status: {r.status_code}")
     print(r.text[:600])
@@ -57,12 +57,12 @@ def create_indexed_ks():
 
 def create_remote_ks():
     body = {
-        "name": "rccb-sop-remote-ks",
+        "name": "Contoso-sop-remote-ks",
         "kind": "remoteSharePoint",
-        "description": "Live query access to RCCB SOP documents in SharePoint",
+        "description": "Live query access to Contoso SOP documents in SharePoint",
         "remoteSharePointParameters": {},
     }
-    url = f"{endpoint}/knowledgesources/rccb-sop-remote-ks"
+    url = f"{endpoint}/knowledgesources/Contoso-sop-remote-ks"
     r = requests.put(url, params=PARAMS, headers=HEADERS, json=body)
     print(f"\n[Remote KS] Status: {r.status_code}")
     print(r.text[:600])
@@ -72,8 +72,8 @@ def create_remote_ks():
 def create_knowledge_base():
     aoai_uri = aoai.replace(".services.ai.azure.com", ".openai.azure.com")
     body = {
-        "name": "rccb-sop-knowledge-base",
-        "description": "RCCB SOP Agentic Knowledge Base with answer synthesis",
+        "name": "contoso-sop-knowledge-base",
+        "description": "Contoso SOP Agentic Knowledge Base with answer synthesis",
         "models": [
             {
                 "kind": "azureOpenAI",
@@ -85,12 +85,12 @@ def create_knowledge_base():
             }
         ],
         "knowledgeSources": [
-            {"name": "rccb-sop-indexed-ks"},
-            {"name": "rccb-sop-remote-ks"},
+            {"name": "Contoso-sop-indexed-ks"},
+            {"name": "Contoso-sop-remote-ks"},
         ],
         "outputMode": "answerSynthesis",
     }
-    url = f"{endpoint}/knowledgebases/rccb-sop-knowledge-base"
+    url = f"{endpoint}/knowledgebases/contoso-sop-knowledge-base"
     r = requests.put(url, params=PARAMS, headers=HEADERS, json=body)
     print(f"\n[Knowledge Base] Status: {r.status_code}")
     print(r.text[:600])
@@ -136,7 +136,7 @@ def list_all():
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("RCCB SOP Knowledge Source Provisioning")
+    print("Contoso SOP Knowledge Source Provisioning")
     print("=" * 60)
 
     # Step 1: Create indexed SharePoint KS
@@ -147,7 +147,7 @@ if __name__ == "__main__":
 
     # Step 3: Monitor ingestion
     if ok1:
-        check_ingestion("rccb-sop-indexed-ks")
+        check_ingestion("Contoso-sop-indexed-ks")
 
     # Step 4: Create knowledge base
     ok3 = create_knowledge_base()

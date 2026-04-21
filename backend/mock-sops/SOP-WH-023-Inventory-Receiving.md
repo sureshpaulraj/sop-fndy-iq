@@ -12,7 +12,7 @@
 
 ## 1. Purpose
 
-This SOP establishes the procedures for receiving, verifying, and put-away of all inbound shipments at RCCB warehouse facilities. Proper execution ensures inventory accuracy, product quality, and supply chain integrity.
+This SOP establishes the procedures for receiving, verifying, and put-away of all inbound shipments at Contoso warehouse facilities. Proper execution ensures inventory accuracy, product quality, and supply chain integrity.
 
 ## 2. Scope
 
@@ -138,9 +138,9 @@ Applies to all inbound deliveries including:
 - SOP-WH-030: Warehouse Storage & Stacking Guidelines
 - SOP-EHS-005: Cold Chain Management
 - FDA 21 CFR Part 117: Current Good Manufacturing Practice
-- RCCB Inventory Management Policy v4.0
+- Contoso Inventory Management Policy v4.0
 
 ---
 
-*Document approved by: Director of Supply Chain Operations, RCCB*  
+*Document approved by: Director of Supply Chain Operations, Contoso*  
 *Next review date: January 1, 2027*

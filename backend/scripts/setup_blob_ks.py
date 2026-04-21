@@ -1,5 +1,5 @@
 """
-Upload RCCB SOP documents to Azure Blob Storage and create
+Upload Contoso SOP documents to Azure Blob Storage and create
 an indexed blob knowledge source + knowledge base.
 This bypasses the SharePoint auth requirement.
 """
@@ -17,8 +17,8 @@ API_VERSION = "2025-11-01-preview"
 HEADERS = {"api-key": key, "Content-Type": "application/json"}
 PARAMS = {"api-version": API_VERSION}
 
-KS_NAME = "rccb-sop-blob-ks"
-KB_NAME = "rccb-sop-knowledge-base"
+KS_NAME = "Contoso-sop-blob-ks"
+KB_NAME = "contoso-sop-knowledge-base"
 
 
 def get_blob_connection_string():
@@ -31,7 +31,7 @@ def get_blob_connection_string():
     return None
 
 
-def upload_sops_to_blob(connection_string: str, container_name: str = "rccb-sops"):
+def upload_sops_to_blob(connection_string: str, container_name: str = "Contoso-sops"):
     """Upload SOP markdown files to a blob container."""
     from azure.storage.blob import BlobServiceClient
     from azure.identity import DefaultAzureCredential
@@ -77,7 +77,7 @@ def create_blob_ks(connection_string: str, container_name: str):
     body = {
         "name": KS_NAME,
         "kind": "azureBlob",
-        "description": "RCCB SOP documents indexed from Azure Blob Storage",
+        "description": "Contoso SOP documents indexed from Azure Blob Storage",
         "azureBlobParameters": {
             "connectionString": connection_string,
             "containerName": container_name,
@@ -114,7 +114,7 @@ def update_knowledge_base():
     """Update the KB to use the blob KS (no user token needed)."""
     body = {
         "name": KB_NAME,
-        "description": "RCCB SOP Knowledge Base — answers from blob-indexed SOPs with citations",
+        "description": "Contoso SOP Knowledge Base — answers from blob-indexed SOPs with citations",
         "models": [{
             "kind": "azureOpenAI",
             "azureOpenAIParameters": {
@@ -198,7 +198,7 @@ def test_kb():
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("RCCB SOP Blob Knowledge Source Setup")
+    print("Contoso SOP Blob Knowledge Source Setup")
     print("=" * 60)
 
     # Step 1: Get blob connection string

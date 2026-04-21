@@ -29,9 +29,9 @@ for kb in r.json().get("value", []):
 # Test KB retrieval WITHOUT user token (should fail for remote SP)
 print("\n=== TEST KB RETRIEVAL (no user token) ===")
 body = {"messages": [{"role": "user", "content": [{"type": "text", "text": "spill response procedure"}]}]}
-r = requests.post(f"{endpoint}/knowledgebases('rccb-sop-knowledge-base')/retrieve",
+r = requests.post(f"{endpoint}/knowledgebases('contoso-sop-knowledge-base')/retrieve",
     params=params, headers={**headers, "Content-Type": "application/json"}, json=body)
-print(f"  rccb-sop-knowledge-base: HTTP {r.status_code}")
+print(f"  contoso-sop-knowledge-base: HTTP {r.status_code}")
 if r.status_code != 200:
     print(f"  Error: {r.json().get('error', {}).get('message', r.text[:200])}")
 

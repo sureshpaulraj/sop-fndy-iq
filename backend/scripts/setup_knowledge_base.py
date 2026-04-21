@@ -27,9 +27,9 @@ logger = logging.getLogger(__name__)
 
 load_dotenv(override=True)
 
-KNOWLEDGE_BASE_NAME = "rccb-sop-knowledge-base"
-INDEXED_KS_NAME = "rccb-sop-indexed-ks"
-REMOTE_KS_NAME = "rccb-sop-remote-ks"
+KNOWLEDGE_BASE_NAME = "contoso-sop-knowledge-base"
+INDEXED_KS_NAME = "Contoso-sop-indexed-ks"
+REMOTE_KS_NAME = "Contoso-sop-remote-ks"
 
 
 def get_index_client() -> SearchIndexClient:
@@ -50,7 +50,7 @@ def create_knowledge_base(client: SearchIndexClient):
 
     kb = KnowledgeBase(
         name=KNOWLEDGE_BASE_NAME,
-        description="RCCB SOP Agentic Knowledge Base — answers questions using SharePoint SOP documents with citations",
+        description="Contoso SOP Agentic Knowledge Base — answers questions using SharePoint SOP documents with citations",
         models=[KnowledgeBaseAzureOpenAIModel(azure_open_ai_parameters=aoai_params)],
         knowledge_sources=[
             KnowledgeSourceReference(name=INDEXED_KS_NAME),

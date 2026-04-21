@@ -58,8 +58,8 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
               width: 32,
               height: 32,
               borderRadius: '50%',
-              background: 'var(--rccb-red)',
-              color: 'var(--rccb-white)',
+              background: 'var(--contoso-red)',
+              color: 'var(--contoso-white)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
@@ -70,10 +70,10 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
             {initials}
           </div>
         )}
-        <span style={{ color: 'var(--rccb-white)', fontSize: '13px', fontWeight: 500 }}>
+        <span style={{ color: 'var(--contoso-white)', fontSize: '13px', fontWeight: 500 }}>
           {user.name.split(' ')[0]}
         </span>
-        <span style={{ color: 'var(--rccb-gray-300)', fontSize: '12px' }}>▼</span>
+        <span style={{ color: 'var(--contoso-gray-300)', fontSize: '12px' }}>▼</span>
       </button>
 
       {open && (
@@ -83,7 +83,7 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
             top: '100%',
             right: 0,
             marginTop: '4px',
-            background: 'var(--rccb-white)',
+            background: 'var(--contoso-white)',
             borderRadius: '8px',
             boxShadow: '0 10px 25px rgba(0,0,0,0.15)',
             minWidth: '220px',
@@ -92,18 +92,18 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
           }}
         >
           {/* Profile info */}
-          <div style={{ padding: '12px 16px', borderBottom: '1px solid var(--rccb-gray-200)' }}>
-            <div style={{ fontWeight: 600, fontSize: '14px', color: 'var(--rccb-dark)' }}>
+          <div style={{ padding: '12px 16px', borderBottom: '1px solid var(--contoso-gray-200)' }}>
+            <div style={{ fontWeight: 600, fontSize: '14px', color: 'var(--contoso-dark)' }}>
               {user.name}
             </div>
-            <div style={{ fontSize: '12px', color: 'var(--rccb-gray-500)', marginTop: '2px' }}>
+            <div style={{ fontSize: '12px', color: 'var(--contoso-gray-500)', marginTop: '2px' }}>
               {user.email}
             </div>
             <div
               style={{
                 fontSize: '11px',
-                color: 'var(--rccb-white)',
-                background: 'var(--rccb-red)',
+                color: 'var(--contoso-white)',
+                background: 'var(--contoso-red)',
                 display: 'inline-block',
                 padding: '2px 8px',
                 borderRadius: '10px',
@@ -116,11 +116,11 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
           </div>
 
           {/* Department */}
-          <div style={{ padding: '8px 16px', borderBottom: '1px solid var(--rccb-gray-200)' }}>
-            <div style={{ fontSize: '11px', color: 'var(--rccb-gray-500)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
+          <div style={{ padding: '8px 16px', borderBottom: '1px solid var(--contoso-gray-200)' }}>
+            <div style={{ fontSize: '11px', color: 'var(--contoso-gray-500)', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
               Department
             </div>
-            <div style={{ fontSize: '13px', color: 'var(--rccb-dark)', marginTop: '2px' }}>
+            <div style={{ fontSize: '13px', color: 'var(--contoso-dark)', marginTop: '2px' }}>
               {user.department}
             </div>
           </div>
@@ -141,11 +141,11 @@ export function UserProfileMenu({ user, onLogout }: UserProfileMenuProps) {
               alignItems: 'center',
               gap: '8px',
               fontSize: '13px',
-              color: 'var(--rccb-red)',
+              color: 'var(--contoso-red)',
               fontWeight: 500,
               transition: 'background 0.2s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rccb-gray-100)')}
+            onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--contoso-gray-100)')}
             onMouseLeave={(e) => (e.currentTarget.style.background = 'transparent')}
           >
             <span style={{ fontSize: '16px' }}>🚪</span>

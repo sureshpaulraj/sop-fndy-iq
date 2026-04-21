@@ -1,6 +1,6 @@
-/** RCCB Design Tokens — Reyes Coca-Cola Bottling Brand Theme */
+/** Contoso Design Tokens — Reyes Coca-Cola Bottling Brand Theme */
 
-export const rccbTheme = {
+export const ContosoTheme = {
   colors: {
     primary: '#F40009',       // Coca-Cola Red
     primaryHover: '#D10007',
@@ -56,4 +56,4 @@ export const rccbTheme = {
   },
 } as const;
 
-export type RCCBTheme = typeof rccbTheme;
+export type ContosoTheme = typeof ContosoTheme;

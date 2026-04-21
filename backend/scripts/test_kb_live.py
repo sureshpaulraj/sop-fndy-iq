@@ -25,7 +25,7 @@ body = {
 }
 
 r = requests.post(
-    f"{endpoint}/knowledgebases('rccb-sop-knowledge-base')/retrieve",
+    f"{endpoint}/knowledgebases('contoso-sop-knowledge-base')/retrieve",
     params={"api-version": "2025-11-01-preview"},
     headers={
         "api-key": key,

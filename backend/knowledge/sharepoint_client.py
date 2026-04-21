@@ -1,6 +1,6 @@
 """
 SharePoint Knowledge Client — wraps KnowledgeBaseRetrievalClient
-for querying RCCB SOP documents via Azure AI Search agentic retrieval.
+for querying Contoso SOP documents via Azure AI Search agentic retrieval.
 """
 
 import os
@@ -12,9 +12,9 @@ from azure.core.credentials import AzureKeyCredential
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-KNOWLEDGE_BASE_NAME = "rccb-sop-knowledge-base"
-INDEXED_KS_NAME = "rccb-sop-sp-indexed-ks"
-REMOTE_KS_NAME = "rccb-sop-remote-ks"
+KNOWLEDGE_BASE_NAME = "contoso-sop-knowledge-base"
+INDEXED_KS_NAME = "Contoso-sop-sp-indexed-ks"
+REMOTE_KS_NAME = "Contoso-sop-remote-ks"
 
 
 @dataclass
@@ -39,7 +39,7 @@ class KBResult:
 
 
 class SharePointKnowledgeClient:
-    """Client for querying RCCB SOP knowledge base via agentic retrieval."""
+    """Client for querying Contoso SOP knowledge base via agentic retrieval."""
 
     def __init__(self):
         self._client = None

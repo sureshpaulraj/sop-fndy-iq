@@ -12,11 +12,11 @@
 
 ## 1. Purpose
 
-This SOP defines the operational and safety requirements for all powered industrial truck (forklift) operations at RCCB warehouse facilities. All forklift operators must read, understand, and comply with this procedure.
+This SOP defines the operational and safety requirements for all powered industrial truck (forklift) operations at Contoso warehouse facilities. All forklift operators must read, understand, and comply with this procedure.
 
 ## 2. Scope
 
-Covers all forklift types used at RCCB facilities:
+Covers all forklift types used at Contoso facilities:
 - Sit-down counterbalance (electric and propane)
 - Stand-up reach trucks
 - Order pickers
@@ -26,7 +26,7 @@ Covers all forklift types used at RCCB facilities:
 ## 3. Operator Certification Requirements
 
 ### 3.1 Initial Certification
-- Complete RCCB Forklift Training Program (16 hours classroom + practical)
+- Complete Contoso Forklift Training Program (16 hours classroom + practical)
 - Pass written exam (minimum 80% score)
 - Pass practical driving evaluation with certified trainer
 - Receive operator certification card (valid for 3 years)
@@ -42,7 +42,7 @@ Covers all forklift types used at RCCB facilities:
 - Failure to complete annual refresher training
 - Three or more safety violations within 12 months
 
-## 4. Pre-Shift Inspection (RCCB Form FL-101)
+## 4. Pre-Shift Inspection (Contoso Form FL-101)
 
 Every operator must complete Form FL-101 **before each shift**:
 
@@ -65,7 +65,7 @@ Every operator must complete Form FL-101 **before each shift**:
 
 ### 4.3 Deficiency Reporting
 - Any deficiency found → Tag unit **OUT OF SERVICE** immediately
-- Complete RCCB Equipment Deficiency Report (Form WH-EDR-200)
+- Complete Contoso Equipment Deficiency Report (Form WH-EDR-200)
 - Notify maintenance team and shift supervisor
 - Do NOT operate a deficient forklift under any circumstances
 
@@ -134,7 +134,7 @@ Any forklift-related incident must be reported immediately:
 1. Stop the forklift and secure the area
 2. Check for injuries — call 911 if needed
 3. Notify shift supervisor within 5 minutes
-4. Complete RCCB Incident Report (Form WH-IR-300) within 24 hours
+4. Complete Contoso Incident Report (Form WH-IR-300) within 24 hours
 5. Forklift must be inspected before returning to service
 
 ## 9. References
@@ -143,9 +143,9 @@ Any forklift-related incident must be reported immediately:
 - ANSI/ITSDF B56.1: Safety Standard for Low Lift and High Lift Trucks
 - SOP-EHS-003: General Warehouse Safety Procedures
 - SOP-WH-042: Warehouse Spill Response & Cleanup
-- RCCB Fleet Safety Policy v3.0
+- Contoso Fleet Safety Policy v3.0
 
 ---
 
-*Document approved by: VP of Warehouse Operations, RCCB*  
+*Document approved by: VP of Warehouse Operations, Contoso*  
 *Next review date: February 1, 2027*

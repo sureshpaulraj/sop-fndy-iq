@@ -11,7 +11,7 @@ params = {"api-version": "2025-11-01-preview"}
 
 # Step 1: Verify KS uses managed identity
 print("=== Verify Blob KS ===")
-r = requests.get(f"{endpoint}/knowledgesources/rccb-sop-blob-ks", params=params, headers={"api-key": key})
+r = requests.get(f"{endpoint}/knowledgesources/Contoso-sop-blob-ks", params=params, headers={"api-key": key})
 data = r.json()
 conn = data.get("azureBlobParameters", {}).get("connectionString", "")
 uses_mi = "ResourceId" in conn
@@ -22,8 +22,8 @@ print(f"Created: {json.dumps(data.get('azureBlobParameters', {}).get('createdRes
 # Step 2: Update KB to use blob KS
 print("\n=== Update Knowledge Base ===")
 body = {
-    "name": "rccb-sop-knowledge-base",
-    "description": "RCCB SOP Knowledge Base — blob-indexed SOPs with answer synthesis (managed identity)",
+    "name": "contoso-sop-knowledge-base",
+    "description": "Contoso SOP Knowledge Base — blob-indexed SOPs with answer synthesis (managed identity)",
     "models": [{
         "kind": "azureOpenAI",
         "azureOpenAIParameters": {
@@ -32,10 +32,10 @@ body = {
             "modelName": "gpt-4.1",
         },
     }],
-    "knowledgeSources": [{"name": "rccb-sop-blob-ks"}],
+    "knowledgeSources": [{"name": "Contoso-sop-blob-ks"}],
     "outputMode": "answerSynthesis",
 }
-r = requests.put(f"{endpoint}/knowledgebases/rccb-sop-knowledge-base", params=params, headers=headers, json=body)
+r = requests.put(f"{endpoint}/knowledgebases/contoso-sop-knowledge-base", params=params, headers=headers, json=body)
 print(f"KB Update Status: {r.status_code}")
 if r.status_code in (200, 201):
     kb = r.json()
@@ -45,7 +45,7 @@ else:
 
 # Step 3: Check indexer status
 print("\n=== Indexer Status ===")
-r = requests.get(f"{endpoint}/indexers('rccb-sop-blob-ks-indexer')/search.status", params=params, headers={"api-key": key})
+r = requests.get(f"{endpoint}/indexers('Contoso-sop-blob-ks-indexer')/search.status", params=params, headers={"api-key": key})
 if r.status_code == 200:
     idx = r.json()
     last = idx.get("lastResult", {})
@@ -57,13 +57,13 @@ else:
 
 # Step 4: Check index doc count
 print("\n=== Index Document Count ===")
-r = requests.get(f"{endpoint}/indexes('rccb-sop-blob-ks-index')/docs/$count", params=params, headers={"api-key": key})
+r = requests.get(f"{endpoint}/indexes('Contoso-sop-blob-ks-index')/docs/$count", params=params, headers={"api-key": key})
 print(f"Documents in index: {r.text.strip()}")
 
 # Step 5: Test KB retrieval
 print("\n=== Test KB Retrieval ===")
 body = {"messages": [{"role": "user", "content": [{"type": "text", "text": "What is the spill response procedure?"}]}]}
-r = requests.post(f"{endpoint}/knowledgebases('rccb-sop-knowledge-base')/retrieve", params=params, headers=headers, json=body)
+r = requests.post(f"{endpoint}/knowledgebases('contoso-sop-knowledge-base')/retrieve", params=params, headers=headers, json=body)
 print(f"Retrieve Status: {r.status_code}")
 if r.status_code == 200:
     data = r.json()

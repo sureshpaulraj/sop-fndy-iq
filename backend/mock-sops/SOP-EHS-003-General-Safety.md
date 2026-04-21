@@ -12,7 +12,7 @@
 
 ## 1. Purpose
 
-This SOP defines the general safety requirements for all personnel working in RCCB warehouse facilities. Compliance is mandatory and is a condition of employment.
+This SOP defines the general safety requirements for all personnel working in Contoso warehouse facilities. Compliance is mandatory and is a condition of employment.
 
 ## 2. Personal Protective Equipment (PPE)
 
@@ -69,7 +69,7 @@ This SOP defines the general safety requirements for all personnel working in RC
 
 ### 4.1 Safety Data Sheets (SDS)
 - SDS binder maintained at each department (physical copy)
-- Electronic SDS available via RCCB Safety Portal
+- Electronic SDS available via Contoso Safety Portal
 - All employees must know how to access SDS for chemicals they work with
 - SDS must be reviewed before using any new chemical
 
@@ -115,12 +115,12 @@ This SOP defines the general safety requirements for all personnel working in RC
 
 ### 6.2 Reporting Channels
 - **Supervisor** — first point of contact for all safety issues
-- **RCCB Safety Hotline** — 1-800-RCCB-EHS (anonymous reporting available)
+- **Contoso Safety Hotline** — 1-800-Contoso-EHS (anonymous reporting available)
 - **EHS Mobile App** — submit reports with photos from your device
 - **Safety suggestion box** — located in break room
 
 ### 6.3 No Retaliation Policy
-RCCB prohibits retaliation against any employee who reports a safety concern, near-miss, or violation in good faith. Reports may be made anonymously.
+Contoso prohibits retaliation against any employee who reports a safety concern, near-miss, or violation in good faith. Reports may be made anonymously.
 
 ## 7. Training Requirements
 
@@ -139,9 +139,9 @@ RCCB prohibits retaliation against any employee who reports a safety concern, ne
 - SOP-WH-042: Warehouse Spill Response & Cleanup
 - SOP-WH-015: Forklift Operations & Safety Guide
 - OSHA 29 CFR 1910 — General Industry Standards
-- RCCB Employee Safety Handbook v7.0
+- Contoso Employee Safety Handbook v7.0
 
 ---
 
-*Document approved by: Regional Safety Director, RCCB Southeast Division*  
+*Document approved by: Regional Safety Director, Contoso Southeast Division*  
 *Next review date: January 15, 2027*

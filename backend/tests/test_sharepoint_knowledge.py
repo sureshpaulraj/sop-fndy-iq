@@ -27,7 +27,7 @@ class TestSharePointKnowledgeClient:
             KBCitation,
             KNOWLEDGE_BASE_NAME,
         )
-        assert KNOWLEDGE_BASE_NAME == "rccb-sop-knowledge-base"
+        assert KNOWLEDGE_BASE_NAME == "contoso-sop-knowledge-base"
 
     def test_kb_result_dataclass(self):
         """KBResult dataclass works correctly."""
@@ -113,7 +113,7 @@ class TestServerKBIntegration:
                     index=1,
                     source="SOP-WH-042",
                     title="Spill Response Procedures",
-                    url="https://sharepoint.rccb.com/sop-wh-042",
+                    url="https://sharepoint.contoso.com/sop-wh-042",
                     snippet="When a spill occurs...",
                 )
             ],
@@ -153,7 +153,7 @@ class TestSetupScripts:
         """setup_knowledge_base.py can be imported."""
         import scripts.setup_knowledge_base as skb
         assert hasattr(skb, 'create_knowledge_base')
-        assert skb.KNOWLEDGE_BASE_NAME == "rccb-sop-knowledge-base"
+        assert skb.KNOWLEDGE_BASE_NAME == "contoso-sop-knowledge-base"
 
 
 if __name__ == "__main__":

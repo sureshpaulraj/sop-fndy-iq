@@ -1,7 +1,7 @@
 """
 Setup script for Azure AI Search Knowledge Sources.
 Creates both Indexed and Remote SharePoint knowledge sources
-for the RCCB SOP RAG application.
+for the Contoso SOP RAG application.
 
 Usage:
     cd sop-rag/backend
@@ -46,7 +46,7 @@ def create_indexed_sharepoint_ks(client: SearchIndexClient) -> str:
     This indexes SP content into AI Search with chunking, vectorization,
     and semantic ranking for fast cached SOP queries.
     """
-    name = "rccb-sop-indexed-ks"
+    name = "Contoso-sop-indexed-ks"
     aoai_endpoint = os.environ["AZURE_OPENAI_ENDPOINT"]
 
     chat_params = AzureOpenAIVectorizerParameters(
@@ -80,7 +80,7 @@ def create_indexed_sharepoint_ks(client: SearchIndexClient) -> str:
 
     ks = IndexedSharePointKnowledgeSource(
         name=name,
-        description="RCCB SOP documents indexed from SharePoint for agentic retrieval",
+        description="Contoso SOP documents indexed from SharePoint for agentic retrieval",
         indexed_share_point_parameters=IndexedSharePointKnowledgeSourceParameters(
             connection_string=connection_string,
             container_name=container_name,
@@ -99,11 +99,11 @@ def create_remote_sharepoint_ks(client: SearchIndexClient) -> str:
 
     This queries SP content live without indexing for real-time freshness.
     """
-    name = "rccb-sop-remote-ks"
+    name = "Contoso-sop-remote-ks"
 
     ks = RemoteSharePointKnowledgeSource(
         name=name,
-        description="Live query access to RCCB SOP documents in SharePoint",
+        description="Live query access to Contoso SOP documents in SharePoint",
         remote_share_point_parameters=RemoteSharePointKnowledgeSourceParameters(),
     )
 

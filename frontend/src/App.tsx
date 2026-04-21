@@ -8,7 +8,7 @@ import type { Message, Citation, Conversation, UserProfile, SuggestedPrompt } fr
 // Mock user — replace with MSAL auth in production
 const mockUser: UserProfile = {
   name: 'Suresh Paulraj',
-  email: 'sureshpaulraj@rfrccb.com',
+  email: 'sureshpaulraj@contoso.com',
   role: 'Operations Manager',
   department: 'Warehouse Operations',
 };
@@ -168,8 +168,8 @@ export function App() {
           left: 0,
           right: 0,
           height: 'var(--header-height)',
-          background: 'var(--rccb-dark)',
-          color: 'var(--rccb-white)',
+          background: 'var(--contoso-dark)',
+          color: 'var(--contoso-white)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
@@ -178,8 +178,8 @@ export function App() {
         }}
       >
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-          <span style={{ color: 'var(--rccb-red)', fontWeight: 700, fontSize: '18px' }}>
-            RCCB
+          <span style={{ color: 'var(--contoso-red)', fontWeight: 700, fontSize: '18px' }}>
+            Contoso
           </span>
           <span style={{ fontSize: '16px', fontWeight: 500 }}>SOP Assistant</span>
         </div>

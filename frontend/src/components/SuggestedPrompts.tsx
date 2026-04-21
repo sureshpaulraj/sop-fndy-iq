@@ -29,11 +29,11 @@ export function SuggestedPrompts({ prompts, onSelect, disabled }: SuggestedPromp
             alignItems: 'center',
             gap: '6px',
             padding: '8px 14px',
-            background: 'var(--rccb-white)',
-            border: '1px solid var(--rccb-gray-200)',
+            background: 'var(--contoso-white)',
+            border: '1px solid var(--contoso-gray-200)',
             borderRadius: '20px',
             fontSize: '13px',
-            color: 'var(--rccb-gray-700)',
+            color: 'var(--contoso-gray-700)',
             cursor: disabled ? 'not-allowed' : 'pointer',
             opacity: disabled ? 0.5 : 1,
             transition: 'all 0.2s',
@@ -41,15 +41,15 @@ export function SuggestedPrompts({ prompts, onSelect, disabled }: SuggestedPromp
           }}
           onMouseEnter={(e) => {
             if (!disabled) {
-              e.currentTarget.style.borderColor = 'var(--rccb-red)';
-              e.currentTarget.style.color = 'var(--rccb-red)';
+              e.currentTarget.style.borderColor = 'var(--contoso-red)';
+              e.currentTarget.style.color = 'var(--contoso-red)';
               e.currentTarget.style.background = '#FFF5F5';
             }
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = 'var(--rccb-gray-200)';
-            e.currentTarget.style.color = 'var(--rccb-gray-700)';
-            e.currentTarget.style.background = 'var(--rccb-white)';
+            e.currentTarget.style.borderColor = 'var(--contoso-gray-200)';
+            e.currentTarget.style.color = 'var(--contoso-gray-700)';
+            e.currentTarget.style.background = 'var(--contoso-white)';
           }}
         >
           <span>{prompt.icon}</span>

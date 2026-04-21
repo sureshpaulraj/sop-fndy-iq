@@ -13,8 +13,8 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
       style={{
         width: 'var(--citation-panel-width)',
         marginTop: 'var(--header-height)',
-        borderLeft: '1px solid var(--rccb-gray-200)',
-        background: 'var(--rccb-white)',
+        borderLeft: '1px solid var(--contoso-gray-200)',
+        background: 'var(--contoso-white)',
         overflow: 'auto',
         padding: '16px',
         flexShrink: 0,
@@ -32,7 +32,7 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
         <button
           onClick={onClose}
           aria-label="Close citations panel"
-          style={{ fontSize: '18px', color: 'var(--rccb-gray-500)', cursor: 'pointer' }}
+          style={{ fontSize: '18px', color: 'var(--contoso-gray-500)', cursor: 'pointer' }}
         >
           ✕
         </button>
@@ -45,12 +45,12 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
             style={{
               padding: '12px',
               borderRadius: '8px',
-              border: '1px solid var(--rccb-gray-200)',
-              background: 'var(--rccb-gray-100)',
+              border: '1px solid var(--contoso-gray-200)',
+              background: 'var(--contoso-gray-100)',
               transition: 'border-color 0.2s',
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'var(--rccb-blue)')}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--rccb-gray-200)')}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'var(--contoso-blue)')}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--contoso-gray-200)')}
           >
             <div
               style={{
@@ -62,7 +62,7 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
             >
               <span
                 style={{
-                  background: 'var(--rccb-blue)',
+                  background: 'var(--contoso-blue)',
                   color: 'white',
                   borderRadius: '4px',
                   padding: '1px 6px',
@@ -74,18 +74,18 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
               >
                 {c.index}
               </span>
-              <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--rccb-dark)' }}>
+              <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--contoso-dark)' }}>
                 {c.source}
               </span>
             </div>
-            <div style={{ fontSize: '13px', color: 'var(--rccb-gray-700)', marginTop: '2px' }}>
+            <div style={{ fontSize: '13px', color: 'var(--contoso-gray-700)', marginTop: '2px' }}>
               {c.title}
             </div>
             {c.snippet && (
               <div
                 style={{
                   fontSize: '12px',
-                  color: 'var(--rccb-gray-500)',
+                  color: 'var(--contoso-gray-500)',
                   marginTop: '6px',
                   fontStyle: 'italic',
                   lineHeight: '18px',
@@ -97,7 +97,7 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
               </div>
             )}
             {c.page && (
-              <div style={{ fontSize: '12px', color: 'var(--rccb-gray-500)', marginTop: '4px' }}>
+              <div style={{ fontSize: '12px', color: 'var(--contoso-gray-500)', marginTop: '4px' }}>
                 📄 Page {c.page}
               </div>
             )}
@@ -117,12 +117,12 @@ export function CitationPanel({ citations, onClose }: CitationPanelProps) {
                   textDecoration: 'none',
                   padding: '6px 12px',
                   borderRadius: '6px',
-                  background: 'var(--rccb-blue)',
+                  background: 'var(--contoso-blue)',
                   transition: 'background 0.2s',
                   cursor: 'pointer',
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--rccb-red)')}
-                onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--rccb-blue)')}
+                onMouseEnter={(e) => (e.currentTarget.style.background = 'var(--contoso-red)')}
+                onMouseLeave={(e) => (e.currentTarget.style.background = 'var(--contoso-blue)')}
               >
                 📂 Open Source Document ↗
               </a>

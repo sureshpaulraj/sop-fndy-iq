@@ -12,11 +12,11 @@
 
 ## 1. Purpose
 
-This Standard Operating Procedure establishes the required steps for responding to and cleaning up chemical, liquid, or hazardous material spills within RCCB warehouse facilities. Compliance is mandatory for all warehouse personnel.
+This Standard Operating Procedure establishes the required steps for responding to and cleaning up chemical, liquid, or hazardous material spills within Contoso warehouse facilities. Compliance is mandatory for all warehouse personnel.
 
 ## 2. Scope
 
-Applies to all Reyes Coca-Cola Bottling (RCCB) warehouse locations, including:
+Applies to all Reyes Coca-Cola Bottling (Contoso) warehouse locations, including:
 - Receiving docks
 - Storage areas
 - Pick/pack zones
@@ -59,7 +59,7 @@ Applies to all Reyes Coca-Cola Bottling (RCCB) warehouse locations, including:
 ## 6. Major Spill Response
 
 1. Activate the Facility Emergency Response Plan (SOP-EHS-001)
-2. Contact the EHS Hotline: **1-800-RCCB-EHS**
+2. Contact the EHS Hotline: **1-800-Contoso-EHS**
 3. Evacuate all personnel from the affected zone
 4. Shut down HVAC in the affected area (for volatile substances)
 5. Do NOT attempt cleanup — wait for the Hazmat Response Team
@@ -68,7 +68,7 @@ Applies to all Reyes Coca-Cola Bottling (RCCB) warehouse locations, including:
 
 ## 7. Documentation Requirements
 
-All spills must be documented within **24 hours** using the RCCB EHS Incident Report Form (Form EHS-IR-100):
+All spills must be documented within **24 hours** using the Contoso EHS Incident Report Form (Form EHS-IR-100):
 
 - Date, time, and location of the spill
 - Substance name, quantity, and SDS reference
@@ -102,9 +102,9 @@ All spills must be documented within **24 hours** using the RCCB EHS Incident Re
 - SOP-EHS-003: General Warehouse Safety Procedures
 - SOP-EHS-008: Hazardous Material Handling & Spill Control
 - OSHA 29 CFR 1910.120: Hazardous Waste Operations
-- RCCB EHS Policy Manual v5.2
+- Contoso EHS Policy Manual v5.2
 
 ---
 
-*Document approved by: Regional Safety Director, RCCB Southeast Division*  
+*Document approved by: Regional Safety Director, Contoso Southeast Division*  
 *Next review date: January 15, 2027*

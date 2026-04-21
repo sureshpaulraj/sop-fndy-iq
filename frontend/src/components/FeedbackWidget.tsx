@@ -48,7 +48,7 @@ export function FeedbackWidget({ messageId, onFeedback }: FeedbackWidgetProps) {
         👎
       </button>
       {submitted && (
-        <span style={{ fontSize: '12px', color: 'var(--rccb-gray-500)' }}>
+        <span style={{ fontSize: '12px', color: 'var(--contoso-gray-500)' }}>
           Thanks for your feedback
         </span>
       )}

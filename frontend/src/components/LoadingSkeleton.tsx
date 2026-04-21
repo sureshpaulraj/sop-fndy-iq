@@ -16,7 +16,7 @@ export function LoadingSkeleton() {
           maxWidth: '70%',
           padding: '16px',
           borderRadius: '12px 12px 12px 0',
-          background: 'var(--rccb-white)',
+          background: 'var(--contoso-white)',
           boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
           display: 'flex',
           flexDirection: 'column',
@@ -25,7 +25,7 @@ export function LoadingSkeleton() {
       >
         <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <span style={{ fontSize: '14px' }}>🤖</span>
-          <span style={{ fontSize: '13px', color: 'var(--rccb-gray-500)' }}>
+          <span style={{ fontSize: '13px', color: 'var(--contoso-gray-500)' }}>
             Thinking...
           </span>
         </div>
@@ -36,7 +36,7 @@ export function LoadingSkeleton() {
               height: '12px',
               width: `${w}px`,
               borderRadius: '4px',
-              background: 'var(--rccb-gray-200)',
+              background: 'var(--contoso-gray-200)',
               animation: 'pulse 1.5s ease-in-out infinite',
               animationDelay: `${i * 0.2}s`,
             }}

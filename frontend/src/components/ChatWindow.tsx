@@ -45,7 +45,7 @@ export function ChatWindow({
         flexDirection: 'column',
         marginTop: 'var(--header-height)',
         marginLeft: 'var(--sidebar-width)',
-        background: 'var(--rccb-gray-100)',
+        background: 'var(--contoso-gray-100)',
       }}
     >
       {/* Messages Area */}
@@ -70,11 +70,11 @@ export function ChatWindow({
               justifyContent: 'center',
               flex: 1,
               gap: '16px',
-              color: 'var(--rccb-gray-500)',
+              color: 'var(--contoso-gray-500)',
             }}
           >
             <div style={{ fontSize: '48px' }}>📋</div>
-            <h2 style={{ fontSize: '20px', fontWeight: 600, color: 'var(--rccb-dark)' }}>
+            <h2 style={{ fontSize: '20px', fontWeight: 600, color: 'var(--contoso-dark)' }}>
               SOP Assistant
             </h2>
             <p>Ask a question about Standard Operating Procedures</p>
@@ -100,8 +100,8 @@ export function ChatWindow({
         onSubmit={handleSubmit}
         style={{
           padding: '16px 24px 8px',
-          borderTop: '1px solid var(--rccb-gray-200)',
-          background: 'var(--rccb-white)',
+          borderTop: '1px solid var(--contoso-gray-200)',
+          background: 'var(--contoso-white)',
         }}
       >
         <div
@@ -123,14 +123,14 @@ export function ChatWindow({
             style={{
               flex: 1,
               padding: '12px 16px',
-              border: '1px solid var(--rccb-gray-300)',
+              border: '1px solid var(--contoso-gray-300)',
               borderRadius: '8px',
               fontSize: '15px',
               outline: 'none',
               transition: 'border-color 0.2s',
             }}
-            onFocus={(e) => (e.target.style.borderColor = 'var(--rccb-red)')}
-            onBlur={(e) => (e.target.style.borderColor = 'var(--rccb-gray-300)')}
+            onFocus={(e) => (e.target.style.borderColor = 'var(--contoso-red)')}
+            onBlur={(e) => (e.target.style.borderColor = 'var(--contoso-gray-300)')}
           />
           <button
             type="submit"
@@ -138,8 +138,8 @@ export function ChatWindow({
             aria-label="Send message"
             style={{
               padding: '12px 24px',
-              background: input.trim() ? 'var(--rccb-red)' : 'var(--rccb-gray-300)',
-              color: 'var(--rccb-white)',
+              background: input.trim() ? 'var(--contoso-red)' : 'var(--contoso-gray-300)',
+              color: 'var(--contoso-white)',
               borderRadius: '8px',
               fontWeight: 600,
               fontSize: '14px',
@@ -153,7 +153,7 @@ export function ChatWindow({
 
       {/* Suggested Prompts */}
       {suggestedPrompts && suggestedPrompts.length > 0 && messages.length === 0 && (
-        <div style={{ background: 'var(--rccb-white)', paddingBottom: '12px' }}>
+        <div style={{ background: 'var(--contoso-white)', paddingBottom: '12px' }}>
           <SuggestedPrompts
             prompts={suggestedPrompts}
             onSelect={onSend}

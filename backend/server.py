@@ -91,7 +91,7 @@ _MOCK_SOP_DB = {
                 "source": "SOP-WH-042",
                 "title": "Warehouse Spill Response & Cleanup",
                 "page": 3,
-                "url": "https://sharepoint.rccb.com/sop-wh-042",
+                "url": "https://sharepoint.contoso.com/sop-wh-042",
             },
             {
                 "content": "For hazardous material spills exceeding 5 gallons, activate the facility emergency response plan. Use appropriate PPE from the nearest spill kit station. Document all spills in the EHS incident log within 24 hours.",
@@ -99,11 +99,11 @@ _MOCK_SOP_DB = {
                 "source": "SOP-EHS-008",
                 "title": "Hazardous Material Handling & Spill Control",
                 "page": 12,
-                "url": "https://sharepoint.rccb.com/sop-ehs-008",
+                "url": "https://sharepoint.contoso.com/sop-ehs-008",
             },
         ],
         "response": (
-            "Here's the RCCB spill cleanup procedure per our SOPs:\n\n"
+            "Here's the Contoso spill cleanup procedure per our SOPs:\n\n"
             "**Immediate Actions (within 5 minutes):**\n"
             "1. Cordon off the spill area with caution cones and spill barriers {refs}\n"
             "2. Notify your shift supervisor and the EHS team immediately\n"
@@ -121,12 +121,12 @@ _MOCK_SOP_DB = {
     "forklift": {
         "results": [
             {
-                "content": "All forklift operators must complete a pre-shift inspection using RCCB Form FL-101. Check brakes, steering, horn, lights, hydraulics, tires, forks, and seatbelt. Any deficiency must be reported and the unit tagged out of service.",
+                "content": "All forklift operators must complete a pre-shift inspection using Contoso Form FL-101. Check brakes, steering, horn, lights, hydraulics, tires, forks, and seatbelt. Any deficiency must be reported and the unit tagged out of service.",
                 "score": 0.96,
                 "source": "SOP-WH-015",
                 "title": "Forklift Operations & Safety Guide",
                 "page": 2,
-                "url": "https://sharepoint.rccb.com/sop-wh-015",
+                "url": "https://sharepoint.contoso.com/sop-wh-015",
             },
             {
                 "content": "Operators must maintain certification through annual recertification training. Speed limits: 5 mph in warehouse, 3 mph near pedestrian zones. Always sound horn at blind corners and intersections.",
@@ -134,12 +134,12 @@ _MOCK_SOP_DB = {
                 "source": "SOP-WH-015",
                 "title": "Forklift Operations & Safety Guide",
                 "page": 7,
-                "url": "https://sharepoint.rccb.com/sop-wh-015",
+                "url": "https://sharepoint.contoso.com/sop-wh-015",
             },
         ],
         "response": (
-            "Here's the RCCB forklift operation safety checklist per our SOPs:\n\n"
-            "**Pre-Shift Inspection (RCCB Form FL-101):** {refs}\n"
+            "Here's the Contoso forklift operation safety checklist per our SOPs:\n\n"
+            "**Pre-Shift Inspection (Contoso Form FL-101):** {refs}\n"
             "- ✅ Brakes (service & parking)\n"
             "- ✅ Steering responsiveness\n"
             "- ✅ Horn, lights, and backup alarm\n"
@@ -163,19 +163,19 @@ _MOCK_SOP_DB = {
                 "source": "SOP-WH-023",
                 "title": "Inventory Receiving & Verification SOP",
                 "page": 1,
-                "url": "https://sharepoint.rccb.com/sop-wh-023",
+                "url": "https://sharepoint.contoso.com/sop-wh-023",
             },
             {
-                "content": "Use the RCCB Warehouse Management System (WMS) to log received goods within 2 hours of unloading. Apply FIFO labeling to all pallets. Damaged goods must be segregated in the quarantine area and photographed.",
+                "content": "Use the Contoso Warehouse Management System (WMS) to log received goods within 2 hours of unloading. Apply FIFO labeling to all pallets. Damaged goods must be segregated in the quarantine area and photographed.",
                 "score": 0.88,
                 "source": "SOP-WH-023",
                 "title": "Inventory Receiving & Verification SOP",
                 "page": 4,
-                "url": "https://sharepoint.rccb.com/sop-wh-023",
+                "url": "https://sharepoint.contoso.com/sop-wh-023",
             },
         ],
         "response": (
-            "Here's the RCCB inventory receiving SOP:\n\n"
+            "Here's the Contoso inventory receiving SOP:\n\n"
             "**Step 1 — Verify Shipment** {refs}\n"
             "- Match inbound delivery against Purchase Order (PO) and Bill of Lading (BOL)\n"
             "- Count all cases and verify lot codes\n"
@@ -199,7 +199,7 @@ _MOCK_SOP_DB = {
                 "source": "SOP-EHS-001",
                 "title": "Emergency Evacuation Plan",
                 "page": 1,
-                "url": "https://sharepoint.rccb.com/sop-ehs-001",
+                "url": "https://sharepoint.contoso.com/sop-ehs-001",
             },
             {
                 "content": "Department leads must conduct a headcount at their muster point and report to the Incident Commander within 10 minutes. Do not re-enter the building until the all-clear is given. Visitors must be escorted by their host at all times during evacuation.",
@@ -207,11 +207,11 @@ _MOCK_SOP_DB = {
                 "source": "SOP-EHS-001",
                 "title": "Emergency Evacuation Plan",
                 "page": 3,
-                "url": "https://sharepoint.rccb.com/sop-ehs-001",
+                "url": "https://sharepoint.contoso.com/sop-ehs-001",
             },
         ],
         "response": (
-            "Here's the RCCB emergency evacuation protocol:\n\n"
+            "Here's the Contoso emergency evacuation protocol:\n\n"
             "**When alarm sounds or evacuation is announced:** {refs}\n"
             "1. **STOP** all work immediately — secure hazardous operations if safe to do so\n"
             "2. **PROCEED** to nearest marked exit (do NOT use elevators)\n"
@@ -230,12 +230,12 @@ _MOCK_SOP_DB = {
     "safety": {
         "results": [
             {
-                "content": "All warehouse employees must wear required PPE at all times: hard hat in dock areas, steel-toe boots, high-visibility vest, and safety glasses. Gloves are required when handling product. Report any unsafe conditions via the RCCB Safety Hotline or the EHS app.",
+                "content": "All warehouse employees must wear required PPE at all times: hard hat in dock areas, steel-toe boots, high-visibility vest, and safety glasses. Gloves are required when handling product. Report any unsafe conditions via the Contoso Safety Hotline or the EHS app.",
                 "score": 0.94,
                 "source": "SOP-EHS-003",
                 "title": "General Warehouse Safety Procedures",
                 "page": 2,
-                "url": "https://sharepoint.rccb.com/sop-ehs-003",
+                "url": "https://sharepoint.contoso.com/sop-ehs-003",
             },
             {
                 "content": "Housekeeping: Keep aisles clear of obstructions. Stack pallets no higher than 3-high. Wet floors must be marked with caution signs immediately. Report burned-out lights within the shift.",
@@ -243,11 +243,11 @@ _MOCK_SOP_DB = {
                 "source": "SOP-EHS-003",
                 "title": "General Warehouse Safety Procedures",
                 "page": 5,
-                "url": "https://sharepoint.rccb.com/sop-ehs-003",
+                "url": "https://sharepoint.contoso.com/sop-ehs-003",
             },
         ],
         "response": (
-            "Here are the RCCB safety procedures for warehouse operations:\n\n"
+            "Here are the Contoso safety procedures for warehouse operations:\n\n"
             "**Required PPE (at all times):** {refs}\n"
             "- 🪖 Hard hat — required in all dock areas\n"
             "- 👢 Steel-toe boots\n"
@@ -260,19 +260,19 @@ _MOCK_SOP_DB = {
             "- Wet floors → place caution signs immediately\n"
             "- Report burned-out lights within the shift\n\n"
             "**Reporting:**\n"
-            "- Use the **RCCB Safety Hotline** or EHS mobile app\n"
+            "- Use the **Contoso Safety Hotline** or EHS mobile app\n"
             "- Near-miss reports are mandatory and confidential"
         ),
     },
     "active": {
         "results": [
             {
-                "content": "The RCCB SOP library is organized by department: Warehouse (WH), Environmental Health & Safety (EHS), Quality Assurance (QA), Distribution (DIST), and Human Resources (HR). All SOPs are reviewed annually and versioned in SharePoint.",
+                "content": "The Contoso SOP library is organized by department: Warehouse (WH), Environmental Health & Safety (EHS), Quality Assurance (QA), Distribution (DIST), and Human Resources (HR). All SOPs are reviewed annually and versioned in SharePoint.",
                 "score": 0.93,
                 "source": "SOP-ADM-001",
                 "title": "SOP Library & Document Control",
                 "page": 1,
-                "url": "https://sharepoint.rccb.com/sop-adm-001",
+                "url": "https://sharepoint.contoso.com/sop-adm-001",
             },
             {
                 "content": "Currently 47 active SOPs across departments: WH (12), EHS (9), QA (8), DIST (11), HR (7). Each SOP has an owner, review date, and version number. Expired SOPs are archived but accessible for audit purposes.",
@@ -280,11 +280,11 @@ _MOCK_SOP_DB = {
                 "source": "SOP-ADM-001",
                 "title": "SOP Library & Document Control",
                 "page": 3,
-                "url": "https://sharepoint.rccb.com/sop-adm-001",
+                "url": "https://sharepoint.contoso.com/sop-adm-001",
             },
         ],
         "response": (
-            "Here's an overview of all active RCCB SOPs:\n\n"
+            "Here's an overview of all active Contoso SOPs:\n\n"
             "**Total Active SOPs: 47** {refs}\n\n"
             "| Department | Code | Count |\n"
             "|---|---|---|\n"
@@ -299,7 +299,7 @@ _MOCK_SOP_DB = {
             "- 📦 Receiving → SOP-WH-023\n"
             "- ⚠️ Emergency → SOP-EHS-001\n"
             "- 🧪 Quality inspection → SOP-QA-010\n\n"
-            "All SOPs are reviewed annually. Access the full library on [SharePoint](https://sharepoint.rccb.com/sop-library)."
+            "All SOPs are reviewed annually. Access the full library on [SharePoint](https://sharepoint.contoso.com/sop-library)."
         ),
     },
 }
